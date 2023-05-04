@@ -1,0 +1,200 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1.6rem;
+    background-image: url("../images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.5em;
+}
+
+.main-text {
+    margin-top: 3em;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+
+.sub-text {
+    padding: 8px;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+}
+
+.top-button {
+    margin-top: 3em;
+    padding: 18px 55px;
+    background-color: hsl(248, 32%, 49%);
+    font-size: 1.55rem;
+    line-height: 1.7;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 8px 1.5px 0px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px -8px 1.5px 0px rgba(0,0,0,0.15) inset; */
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+    background-color: white;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 8px 1.5px 0px rgba(0, 0, 0, 0.15);
+}
+
+#form input {
+    /* to change height use line-height */
+    font-weight: 700;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 1.3em;
+    padding: 0 1.2em;
+    line-height: 5.45rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+
+}
+
+#form input:focus {
+    outline: none;
+    border: 2px solid hsl(249, 10%, 26%);
+}
+
+#form input.error {
+    display: block;
+    outline: none;
+    width: 100%;
+    text-align: left;
+    font-style: normal;
+    font-size: 80%;
+    color: hsl(0, 100%, 74%);
+    background: url("../images/icon-error.svg") no-repeat 330px;
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+#form input.error:focus {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+.error {
+    text-align: right;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    font-size: 80%;
+    margin-bottom: 10px;
+}
+
+.error::placeholder {
+    color: hsl(0, 100%, 74%);
+}
+
+#submit {
+    background-color: hsl(154, 59%, 51%);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    line-height: 4;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: inset 0px -5px 0px 0px rgb(0 0 0 / 10%);
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: hsl(155, 59%, 60%);
+}
+
+.bottom-text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(87, 0%, 67%);
+    margin: 10px 30px 0 20px;
+
+}
+
+.terms {
+    font-weight: 600;
+    color: hsl(0, 100%, 74%)
+}
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    display: none;
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-image: url("../images/bg-intro-desktop.png");
+        background-color: hsl(0, 100%, 74%);
+    }
+
+    .main-text {
+        margin-top: 5.4em;
+        font-size: 3.4em;
+        font-weight: 800;
+        margin-right: 13em;
+    }
+
+    .sub-text {
+        text-align: left;
+        padding-left: 7em;
+        padding-right: 45em;
+    }
+
+    .top-button {
+        margin-right: -36em;
+        margin-top: -27.5em;
+        padding-left: 7em;
+        padding-right: 7em;
+    }
+
+    #form {
+        display: flex;
+        margin-left: 35em;
+        padding: 2.5em;
+    }
+
+    #form input {
+        width: 35em;
+    }
+
+    .attribution a {
+        display: block;
+        text-align: center;
+    }
+
+
+}
+footer {
+    text-align: center;
+    margin-bottom: 50px;
+}
