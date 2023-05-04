@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="main-text">
+            Learn to code by watching others
+        </h1>
+
+        <p class="sub-text">
+            See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+            but understanding how developers think is invaluable.
+        </p>
+
+        <button class="top-button">
+            Try it free 7 days then $20/mo. thereafter
+        </button>
+
+        <form id="form" autocomplete="on" title="Form">
+            <input type="text" name="fName" id="fName" title="First Name" placeholder="First Name"
+                autocomplete="given-name">
+            <span class="error" aria-live="polite"></span>
+
+            <input type="text" name="lName" id="lName" title="Last Name" placeholder="Last Name"
+                autocomplete="family-name">
+            <span class="error" aria-live="polite"></span>
+
+            <input type="email" name="email" id="email" title="Email" placeholder="Email Address" autocomplete="email">
+            <span class="error" aria-live="polite"></span>
+
+            <input type="password" name="password" id="password" title="Password" placeholder="Password"
+                autocomplete="current-password">
+            <span class="error" aria-live="polite"></span>
+
+            <button type="submit" name="submit" title="Submit" id="submit">CLAIM YOUR FREE TRIAL </button>
+            <span class="bottom-text">
+                By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span>
+            </span>
+        </form>
+    </div>
+
+
+    <footer>
+
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/mariajiwuaku">Maria-goretti Onyekachi Jiwuaku</a>.
+        
+    </footer>
+
+    
+</body>
+
+</html>
